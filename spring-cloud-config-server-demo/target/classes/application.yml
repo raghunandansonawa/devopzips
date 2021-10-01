@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active:
+    - native,git  
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/krishnamurthypradeep/configfiles.git
+            
+server:
+  port: 8888
+  
+  
